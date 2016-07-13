@@ -1,40 +1,77 @@
 {
-  "name": "today",
-  "version": "0.0.0",
-  "license": "MIT",
-  "angular-cli": {},
-  "scripts": {
-    "start": "ng server",
-    "postinstall": "typings install --ambient",
-    "lint": "tslint src/**/*.ts",
-    "format": "clang-format -i -style=file --glob=src/**/*.ts",
-    "pree2e": "webdriver-manager update",
-    "e2e": "protractor"
-  },
-  "private": true,
   "dependencies": {
-    "angular2": "2.0.0-beta.11",
-    "es6-shim": "^0.35.0",
-    "reflect-metadata": "0.1.2",
-    "rxjs": "5.0.0-beta.2",
-    "systemjs": "0.19.20",
-    "zone.js": "^0.6.4"
+    "angular": "^1.5.0",
+    "angular-ui-router": "^0.3.1",
+    "todomvc-app-css": "^2.0.4"
   },
   "devDependencies": {
-    "angular-cli": "0.0.*",
-    "angular-cli-github-pages": "^0.2.0",
-    "clang-format": "^1.0.35",
-    "codelyzer": "0.0.12",
-    "ember-cli-inject-live-reload": "^1.4.0",
-    "jasmine-core": "^2.3.4",
-    "jasmine-spec-reporter": "^2.4.0",
-    "karma": "^0.13.15",
-    "karma-chrome-launcher": "^0.2.1",
-    "karma-jasmine": "^0.3.6",
-    "protractor": "^3.0.0",
-    "ts-node": "^0.5.5",
-    "tslint": "^3.6.0",
-    "typescript": "^1.8.7",
-    "typings": "^0.6.6"
+    "angular-mocks": "^1.5.0-beta.2",
+    "gulp-angular-templatecache": "^1.8.0",
+    "del": "^2.0.2",
+    "gulp": "gulpjs/gulp#4ed9a4a3275559c73a396eff7e1fde3824951ebb",
+    "gulp-hub": "frankwallis/gulp-hub#d461b9c700df9010d0a8694e4af1fb96d9f38bf4",
+    "gulp-filter": "^4.0.0",
+    "gulp-util": "^3.0.7",
+    "gulp-angular-filesort": "^1.1.1",
+    "gulp-htmlmin": "^1.3.0",
+    "gulp-insert": "^0.5.0",
+    "gulp-ng-annotate": "^1.1.0",
+    "gulp-sass": "^2.1.1",
+    "browser-sync": "^2.9.11",
+    "browser-sync-spa": "^1.0.3",
+    "karma": "^0.13.14",
+    "karma-coverage": "^0.5.3",
+    "karma-junit-reporter": "^0.4.2",
+    "jasmine": "^2.4.1",
+    "karma-jasmine": "^0.3.8",
+    "es6-shim": "^0.35.0",
+    "karma-angular-filesort": "^1.0.0",
+    "karma-ng-html2js-preprocessor": "^0.2.0",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-phantomjs-shim": "^1.1.2",
+    "phantomjs-prebuilt": "^2.1.6",
+    "karma-webpack": "^1.7.0",
+    "isparta-loader": "^2.0.0",
+    "webpack": "2.1.0-beta.8",
+    "html-webpack-plugin": "^2.9.0",
+    "style-loader": "^0.13.0",
+    "css-loader": "^0.23.1",
+    "postcss-loader": "^0.8.0",
+    "autoprefixer": "^6.2.2",
+    "json-loader": "^0.5.4",
+    "webpack-split-by-path": "^0.0.10",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "ng-annotate-loader": "^0.0.10",
+    "sass-loader": "^3.1.2",
+    "node-sass": "^3.4.2",
+    "eslint": "^2.11.0",
+    "eslint-config-xo-space": "^0.12.0",
+    "eslint-loader": "^1.3.0",
+    "babel-loader": "^6.2.0",
+    "babel-eslint": "^6.0.2",
+    "eslint-plugin-babel": "^3.1.0",
+    "babel-core": "^6.2.0",
+    "babel-polyfill": "^6.7.4",
+    "babel-preset-es2015": "^6.2.0"
+  },
+  "scripts": {
+    "build": "gulp",
+    "serve": "gulp serve",
+    "serve:dist": "gulp serve:dist",
+    "test": "gulp test",
+    "test:auto": "gulp test:auto"
+  },
+  "eslintConfig": {
+    "globals": {
+      "expect": true
+    },
+    "root": true,
+    "env": {
+      "browser": true,
+      "jasmine": true
+    },
+    "extends": [
+      "xo-space/esnext"
+    ]
   }
 }
