@@ -1,14 +1,25 @@
-$primary-color-dark:   #455A64
-$primary-color:        #607D8B
-$primary-color-light:  #CFD8DC
-$primary-color-text:   #FFFFFF
-$accent-color:         #FF5722
-$primary-text-color:   #212121
-$secondary-text-color: #727272
-$divider-color:        #B6B6B6
+$primary-color-dark:   #455A64;
+
+$primary-color-light:  #CFD8DC;
+$primary-color-text:   #FFFFFF;
+$accent-color:         #FF5722;
+$primary-text-color:   #212121;
+$secondary-text-color: #727272;
+$divider-color:        #B6B6B6;
+
+$primary-color: 810000;
+$header-color: #aa0016;
 
 
 header {
-	background-color: $primary-color-dark;
-	height:60px;
+	font-size: 50px;
+	text-align: center;
+    padding-bottom: 20px;
+    color: $header-color;
+    font-family: Lobster, serif;
 }
+
+$red: 810000;
+$yellow: FFEB6B;
+$blue: 110744;
+$primary-color-dark: 111030;
