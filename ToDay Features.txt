@@ -1,0 +1,16 @@
+Features:
+
+1 - Click to add a task (default duration 30min?)
+2 - Drag (bottom or top of task pane?) to change duration (What interval? 5min?)
+3 - Click and drag to move task
+4 - Pin to fix start time (i.e. task isn't movable)
+5 - Zoom and scroll
+6 - Scratch pad for unscheduled tasks?
+7 - Move tasks around one another
+		If I move task 1 on top of task 2, task 2 shifts down to the next available timeslot
+		If I extend task 1 past the start time of task 2, task 2 shifts down.
+8 - Flow moving tasks around fixed tasks
+		If task 2 is fixed and I move task 1 on top of it, task 1 is split (into minimum blocks of 15min, i.e. if task is less than 30min duration, it can't be split). If there is 15 min available before task 2 begins, the first block goes before task 2 and the rest goes after task two. Moving up and down from this position changes the distribution of task 1 before and after task 2.
+9 - Sticky notes 
+		Notes eg. for items that are <5mins can be appended to the start of end of a task, or to any unused timeslot.
+		If a task is moved into a time slot with a sticky note, that note moves to the start or end of that task.

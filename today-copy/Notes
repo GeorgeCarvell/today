@@ -1,0 +1,23 @@
+Notes
+
+What are these things
+
+json - When exchanging data between a browser and a server, the data can only be text. JSON is text, and we can convert any JavaScript object into JSON, and send JSON to the server.
+
+gulp - build system, keeps track of tasks and dependencies for whole project
+
+babel- compiler (/transpiler to js?)
+
+angular - js framework, extends html
+
+eslint - linter tool for identifying and reporting on patterns in JavaScript
+
+jasmine - testing framework for JavaScript
+
+karma - tester thing
+
+phantomjs - for automating web page interaction
+
+sass - css but better
+
+node - Event-driven I/O server-side JavaScript environment

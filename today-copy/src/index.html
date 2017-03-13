@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <base href="/">
+    <meta charset="utf-8">
+    <title>TODAY</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/Users/Georgie/Documents/today-master/today-copy/src/index.css">
+    <link rel="stylesheet" type="text/css"
+      href="https://fonts.googleapis.com/css?family=Lobster|Raleway">
+    <script src="/Users/Georgie/Documents/today-master/today-copy/src/index.js"></script>
+  </head>
+
+  <body ng-app="app">
+    <header>
+      <h1>Today</h1>
+    </header>
+    <main>
+      <div>
+        <button class="button" type="button" onclick="toggle()"></button>
+      </div>
+      <div id="timeline">
+        <table>
+          <tr>
+            <th>Time</th>
+            <th>Task</th>
+          </tr>
+          <tr>
+            <td>7:00</td>
+            <td>
+              <div class="task">
+                Do a thang
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>8:00</td>
+            <td>
+              <div class="task">
+                Do a thang
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <form id="taskform" style= "display:none">
+          Task: <input type="text" name="task" required/><br>
+          Duration: <input type="number" name="duration" required/><br>
+          Start by <input type="time" name="start-time"><br>
+          Finish by <input type="time" name="finish-time"><br>
+          <input type="submit"/>
+        </form>
+      </div>
+
+      <div>
+        <button class="button" type="button" onclick="toggle()"></button>
+      </div>
+    </main>
+  </body>
+</html>
