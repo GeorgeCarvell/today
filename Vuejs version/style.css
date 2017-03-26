@@ -1,0 +1,98 @@
+body {
+	font-family: Raleway, sans-serif;
+	color: #030111; 
+}
+.title {
+	border: solid thin red;
+    font-family: 'Lobster', cursive;
+    line-height: 10px;
+    color: #C70039;
+    font-size: 90px;
+	text-align: center;
+}
+.mainBlock {
+	border: solid thin blue;
+}
+.menu {
+	border: dashed thin cyan;
+}
+hr{
+	border-top: 1px solid #A9A9A9;
+	width: 90%;
+}
+.close {
+	float: right;
+	padding:5px;
+	display: inline-block;
+}
+.close img {
+	height: 25px;
+}
+.taskForm, .taskList {
+	background: white;
+	border-radius: 5px;
+	border: solid white 2px;
+  	box-shadow: 0px 0px 0px 12px rgba(0,0,0,0.3); 
+	position: absolute;
+    left: 30%;
+    top: 30%;
+    height: 50%;
+    width: 40%;
+    text-align: center;
+    font-size: 18px;
+
+}
+.taskForm .header, .taskList .header {
+	display:inline-block;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.wrapper {
+	width: 50%;
+	margin: auto;
+	border: solid thin green;
+}
+.timeline {
+	border: dashed thin purple;
+	width: 20%;
+	height: 75%;
+	margin: auto;
+	padding: 10px;
+	float: left;
+	display: inline-block;
+}
+.tasks {
+	border: solid orange;
+	max-width: 70%;
+	height: 75% !;
+	padding: 10px;
+	display: inline-block;
+}
+input[type=text], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submit {
+    width: 50%;
+    background-color: #A1002E;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #7C0023;
+}
+
