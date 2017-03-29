@@ -68,17 +68,17 @@
                     <hr>
                 </div>
                 <div>
-                    <form>
-                        <input type="text" name="enterTask" placeholder="Task" class="formField">
-                        <input type="text" name="enterDescrpition" placeholder="Description" class="formField">
-                        <select name="duration">
-                            <option value="" disabled selected>Duration</option>
-                            <option value="1">1 hr</option>
-                            <option value="2">2 hrs</option>
-                        </select>
-                        <input class="submit" type="submit" value="Submit"> <!--needs to trigger addTask method-->
-                        <button id="add-task"  @click="addTask">Fake Task Button</button>
-                    </form>
+                    
+                    <input type="text" name="enterTask" placeholder="Task" class="formField" v-on:keydown="setName">
+                    <input type="text" name="enterDescrpition" placeholder="Description" class="formField" v-on:keydown="setDescription">
+                    <select name="duration">
+                        <option value="" disabled selected>Duration</option>
+                        <option value="1">1 hr</option>
+                        <option value="2">2 hrs</option>
+                    </select>
+                    <!--<input class="submit" type="submit" value="Submit"> needs to trigger addTask method-->
+                    <button class="submit" id="add-task" @click="addTask">Submit</button>
+
                 </div>
     		</div>
     	</div>
